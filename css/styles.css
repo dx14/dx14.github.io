@@ -61,7 +61,6 @@ h1,h2,h3,h4,h5,h6 {
  
 		.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {color: #fff;background-color:#0066cc}
  
-@media (min-width:768px) {.navbar-default}
  
 .navbar-default .navbar-brand {
 	font-size: 2em;
@@ -109,8 +108,6 @@ header {
 			line-height: 50px;
 			margin-bottom: 25px
 		 }
- 
-@media (min-width:768px) {header .intro-text}
 
 header .intro-text .intro-lead-in {
 	font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -149,10 +146,7 @@ section {padding: 100px 0}
 		margin-top: -50px;
 		margin-bottom: 30px
 	 }
- 
-@media (min-width:768px) {section}
- 
-{}
+
 
 .about-list {
 	width: 100%;
@@ -230,17 +224,30 @@ section {padding: 100px 0}
 	-webkit-transition: opacity .3s;
 }
 
-.projects-list {
+ .arts-list ul {
 	list-style-type: none;
+	float: none;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.projects-list ul {
+	list-style-type: none;
+	float: none;
+	width: 95%;
+	margin: auto;
 }
 
 .projects-list img {
 	float: left;
 	opacity: .7;
-	height: 275px;
-	width: 225px;
-	margin-right: 50px;
-	margin-bottom: 50px;
+	height: 200px;
+	width: 160px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 8px;
+	border: 2px solid #0066cc;
+	border-radius: 10px;
 }
 
 .projects-list img:hover {
@@ -249,7 +256,40 @@ section {padding: 100px 0}
 	-moz-transition: opacity .3s;
 	-webkit-transition: opacity .3s;
 }
- 
+
+.modal-dialog {
+	padding-top: 30px;
+	width: 80%
+	margin: auto;
+}
+
+.modal-title {
+	color: #0066cc;
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.modal-body img {
+	display: block;
+	margin: auto;
+}
+
+.modal p {
+	font-size: .95em;
+}
+
+.modal-body {
+	clear: both;
+	font-family: 'Raleway', sans-serif;
+	font-size: .9em;
+	color: #4d4d4d;
+}
+
+.modal a {
+	font-color: #0066cc;
+}
+
 section#contact {
 	background-color: #222;
 	background-image: url(  );
@@ -304,14 +344,6 @@ ul.social-buttons {margin: auto; list-style: none; width: 330px;}
 	max-width: 800px;
 	margin: auto;
 }
-
-.col-lg-9 {
-	list-style-type: none;
-	float: none;
-	margin: 0 auto;
-	max-width: 1000px;
-	padding-left: 50px;
-}
  
 		ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active {background-color: #0066cc; }
  
@@ -326,5 +358,9 @@ img::selection {background: 0 0}
 img::-moz-selection {background: 0 0}
  
 body {webkit-tap-highlight-color: #0066cc}
+
+body.modal-open {
+    overflow: visible;
+}
  
  

@@ -15,12 +15,30 @@ $(function() {
     });
 });
 
+/*
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
 })
+*/
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
+});
+
+$("#voogasalad").on("click", function() {
+    $('#voogasalad-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+
+$("#slogo").on("click", function() {
+    $('#slogo-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+
+$("#cellsociety").on("click", function() {
+    $('#cellsociety-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+});
+
+$("#game").on("click", function() {
+    $('#game-modal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 });
