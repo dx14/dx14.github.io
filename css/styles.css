@@ -224,11 +224,21 @@ section {padding: 100px 0}
 	-webkit-transition: opacity .3s;
 }
 
- .arts-list ul {
+#art ul {
 	list-style-type: none;
 	float: none;
-	width: 95%;
-	margin: 0 auto;
+	width: 100%;
+	margin: auto;
+}
+
+/* for wider screens */
+@media only screen and (min-width: 1280px) {
+    #art ul {
+        list-style-type: none;
+		float: none;
+		width: 130%;
+		margin: auto;
+    }
 }
 
 .projects-list ul {
@@ -304,6 +314,13 @@ footer {padding: 15px 0;text-align:right}
  
 ul.social-buttons {margin: auto; list-style: none; width: 330px;}
 
+@media only screen and (min-width: 1280px) {
+    ul.social-buttons {
+        margin: auto;
+        list-style: none;
+    }
+}
+
 	ul.social-buttons li a {
  		background-color: #fff;
 		border-radius: 100%;
@@ -338,11 +355,6 @@ ul.social-buttons {margin: auto; list-style: none; width: 330px;}
 .container {
 	margin: auto;
 	max-width: 800px;
-}
-
-.col-lg-10 {
-	max-width: 800px;
-	margin: auto;
 }
  
 		ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active {background-color: #0066cc; }
